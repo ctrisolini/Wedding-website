@@ -469,6 +469,7 @@
       font-size: 1.3rem;
     }
 
+    
     .rsvp {
       position: relative;
       overflow: hidden;
@@ -478,4 +479,296 @@
       color: var(--parchment-light);
       text-align: center;
       background: var(--red-dark);
-      border:
+      border: 7px solid var(--gold);
+      outline: 3px solid var(--sage-dark);
+      outline-offset: -14px;
+    }
+
+    .rsvp h2 {
+      color: var(--parchment-light);
+    }
+
+    .rsvp .eyebrow {
+      color: #f0d898;
+    }
+
+    .rsvp p {
+      max-width: 580px;
+      margin: 1.2rem auto 2rem;
+      font-size: 1.12rem;
+    }
+
+    .rsvp .button {
+      border-color: var(--ink);
+      background: var(--sage-light);
+      color: var(--ink);
+      box-shadow: 4px 4px 0 var(--ink);
+    }
+
+    footer {
+      padding: 0 5% 3rem;
+      color: var(--sage-dark);
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.7rem;
+      font-weight: bold;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 760px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+
+      .hero {
+        min-height: 680px;
+      }
+
+      .hero-card {
+        margin-top: 3rem;
+      }
+
+      .rabbit {
+        transform: scale(0.65);
+      }
+
+      .rabbit:nth-child(2) {
+        transform: scale(0.55) rotate(-6deg);
+      }
+
+      .rabbit:nth-child(3) {
+        transform: scale(0.7) rotate(5deg);
+      }
+
+      .rabbit:nth-child(4) {
+        transform: scale(0.5) rotate(-4deg);
+      }
+
+      .rabbit:nth-child(5) {
+        transform: scale(0.62) rotate(7deg);
+      }
+
+      .schedule,
+      .two-column,
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .event-card {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-title" href="#top">C + E Fair</a>
+
+      <div class="nav-links">
+        <a href="#order-of-merriment">Merriment</a>
+        <a href="#travel">Travel</a>
+        <a href="#questions">Questions</a>
+        <a href="#rsvp">RSVP</a>
+      </div>
+    </nav>
+  </header>
+
+  <div id="top"></div>
+
+  <section class="hero">
+    <div class="bunting" aria-hidden="true">
+      <span class="flag"></span>
+      <span class="flag"></span>
+      <span class="flag"></span>
+      <span class="flag"></span>
+      <span class="flag"></span>
+      <span class="flag"></span>
+      <span class="flag"></span>
+      <span class="flag"></span>
+      <span class="flag"></span>
+    </div>
+
+    <div class="hero-card">
+      <div class="stitched-border" aria-hidden="true"></div>
+
+      <p class="eyebrow">Hear ye, hear ye</p>
+
+      <h1>
+        Calvin <span class="and">&amp;</span><br>
+        Emma
+      </h1>
+
+      <div class="scroll-rule" aria-hidden="true"></div>
+
+      <p class="date-line">The thirty-first day of August, 2027</p>
+      <p class="place-line">Philadelphia, Pennsylvania</p>
+
+      <a class="button" href="#rsvp">Answer the summons</a>
+    </div>
+
+    <div class="rabbit-row" aria-label="Five merry dancing rabbits">
+      <div class="rabbit">
+        <div class="rabbit-head">
+          <div class="rabbit-ear one"></div>
+          <div class="rabbit-ear two"></div>
+          <div class="rabbit-face"></div>
+        </div>
+        <div class="rabbit-body"><div class="rabbit-sash"></div></div>
+      </div>
+
+      <div class="rabbit">
+        <div class="rabbit-head">
+          <div class="rabbit-ear one"></div>
+          <div class="rabbit-ear two"></div>
+          <div class="rabbit-face"></div>
+        </div>
+        <div class="rabbit-body"><div class="rabbit-sash"></div></div>
+      </div>
+
+      <div class="rabbit">
+        <div class="rabbit-head">
+          <div class="rabbit-ear one"></div>
+          <div class="rabbit-ear two"></div>
+          <div class="rabbit-face"></div>
+        </div>
+        <div class="rabbit-body"><div class="rabbit-sash"></div></div>
+      </div>
+
+      <div class="rabbit">
+        <div class="rabbit-head">
+          <div class="rabbit-ear one"></div>
+          <div class="rabbit-ear two"></div>
+          <div class="rabbit-face"></div>
+        </div>
+        <div class="rabbit-body"><div class="rabbit-sash"></div></div>
+      </div>
+
+      <div class="rabbit">
+        <div class="rabbit-head">
+          <div class="rabbit-ear one"></div>
+          <div class="rabbit-ear two"></div>
+          <div class="rabbit-face"></div>
+        </div>
+        <div class="rabbit-body"><div class="rabbit-sash"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="order-of-merriment" class="content-section">
+      <p class="eyebrow">The order of merriment</p>
+      <h2>A fair, a feast, and a great deal of dancing.</h2>
+      <p class="section-lede">
+        Calvin and Emma request the honor of your presence for an odd little
+        celebration in Philadelphia, with good company and unquestionably
+        excellent revelry.
+      </p>
+
+      <div class="schedule">
+        <article class="event-card">
+          <p class="event-time">2:00 PM</p>
+          <h3>The Ceremony</h3>
+          <p>Gather with us as we make the thing official.</p>
+        </article>
+
+        <article class="event-card">
+          <p class="event-time">Afternoon to evening</p>
+          <h3>The Fair</h3>
+          <p>Food, drink, strange delights, and other details to be announced.</p>
+        </article>
+
+        <article class="event-card">
+          <p class="event-time">8:00 PM</p>
+          <h3>The Reception</h3>
+          <p>Feasting, toasts, music, and dancing until the rabbits tire out.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="travel" class="content-section">
+      <div class="two-column">
+        <div>
+          <p class="eyebrow">Pilgrimage & lodging</p>
+          <h2>Make thy way to Philadelphia.</h2>
+          <p class="section-lede">
+            Venue, hotel, parking, and transit instructions shall appear here
+            when the royal scribes have finished their work.
+          </p>
+        </div>
+
+        <div>
+          <div class="detail">
+            <p class="label">Venue</p>
+            <p>Philadelphia, Pennsylvania<br>Exact location forthcoming</p>
+          </div>
+
+          <div class="detail">
+            <p class="label">Lodging</p>
+            <p>Hotel suggestions and any room-block details are forthcoming.</p>
+          </div>
+
+          <div class="detail">
+            <p class="label">Carriages & transit</p>
+            <p>Parking, rideshare, and public-transit guidance are forthcoming.</p>
+          </div>
+
+          <div class="detail">
+            <p class="label">Accessibility</p>
+            <p>Accessibility details and a contact for questions are forthcoming.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="questions" class="content-section">
+      <p class="eyebrow">Questions from the realm</p>
+      <h2>Helpful proclamations.</h2>
+
+      <div class="faq-grid">
+        <article class="faq-item">
+          <h3>What should we wear?</h3>
+          <p>Casual attire. Medieval finery is delightful but never required.</p>
+        </article>
+
+        <article class="faq-item">
+          <h3>May I bring a guest?</h3>
+          <p>Guest details and RSVP instructions will be shared closer to the day.</p>
+        </article>
+
+        <article class="faq-item">
+          <h3>Are small squires invited?</h3>
+          <p>Information about children and guest arrangements is forthcoming.</p>
+        </article>
+
+        <article class="faq-item">
+          <h3>Is there a registry?</h3>
+          <p>Registry news shall be posted when it is ready.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <section id="rsvp" class="rsvp">
+    <p class="eyebrow">The guest ledger</p>
+    <h2>Will you join the fair?</h2>
+    <p>
+      RSVP information and the response deadline will be announced soon.
+      Until then, please keep the thirty-first of August free for merriment.
+    </p>
+
+    <a class="button" href="#top">Return to the proclamation</a>
+  </section>
+
+  <footer>
+    Calvin & Emma · Philadelphia · August 31, 2027
+  </footer>
+</body>
+</html>
